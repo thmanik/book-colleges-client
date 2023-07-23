@@ -16,7 +16,7 @@ const CollegeRoute = () => {
     },[])
     return (
         <div>
-            <div className="text-center font-extrabold text-4xl my-5 text-color">College list</div>
+            <div className="text-center font-extrabold text-4xl my-5 text-color underline">College Information</div>
             <div className="grid md:grid-cols-3 sm:grid-cols-1  ms-12">
             {
                 colleges.map(college=><div key={college._id}><div className="card  w-80 mt-5 m-1 bg-base-100 shadow-xl image-full ">

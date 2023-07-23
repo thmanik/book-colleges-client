@@ -18,7 +18,7 @@ const Colleges = () => {
     },[])
 
     const handleSearch = () => {
-        fetch(`https://toy-box-server-topaz.vercel.app/toySearchBytoyName/${searchText}`)
+        fetch(`http://localhost:5000/allColleges/${searchText}`)
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);

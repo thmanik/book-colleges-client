@@ -14,6 +14,8 @@ import Login from './Components/Login/Login.jsx';
 import Registration from './Components/Registration/Registration.jsx';
 import AuthProvider from './Components/Providers/AuthProvider/AuthProvider.jsx';
 import PrivateRoute from './Components/Routes/PrivateRoute/PrivateRoute.jsx';
+import Admission from './Components/Admission/Admission.jsx';
+import ApplyForm from './Components/ApplyForm/ApplyForm.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -39,6 +41,14 @@ const router = createBrowserRouter([
       {
         path:"registration",
         element:<Registration></Registration>
+      },
+      {
+        path:"admission",
+        element:<Admission></Admission>
+      },
+      {
+        path:"applyForm",
+        element:<ApplyForm></ApplyForm>
       }
     ]
   },
