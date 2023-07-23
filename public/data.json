@@ -12,6 +12,7 @@
       "research_work": "The university focuses on cutting-edge technology research and medical advancements.",
       "sport": "Football",
       "sports_categories": ["Football", "Basketball", "Swimming", "Tennis"],
+      "sports_facilities": ["State-of-the-art Football Field", "Olympic-sized Swimming Pool", "Tennis Courts"],
       "admission_process": "Admission is based on a rigorous entrance exam followed by a personal interview.",
       "rating": 4.8
     },
@@ -26,6 +27,7 @@
       "research_work": "The institute focuses on research areas such as AI, machine learning, and cybersecurity.",
       "sport": "Cricket",
       "sports_categories": ["Cricket", "Badminton", "Volleyball"],
+      "sports_facilities": ["High-tech Computer Labs", "Indoor Badminton Courts", "Volleyball Courts"],
       "admission_process": "Admission is based on merit, and applicants need to submit their JEE Main scores.",
       "rating": 4.5
     },
@@ -40,6 +42,7 @@
       "research_work": "The college conducts research in various art forms and techniques of preservation.",
       "sport": "Painting",
       "sports_categories": ["Painting", "Sculpture", "Dance"],
+      "sports_facilities": ["Art Studios", "Sculpting Workshop", "Dance Studios"],
       "admission_process": "Admission is based on a portfolio assessment and an interview to gauge the students' artistic potential.",
       "rating": 4.2
     },
@@ -54,6 +57,7 @@
       "research_work": "The school conducts research on market trends, startup strategies, and economic policies.",
       "sport": "Management Games",
       "sports_categories": ["Management Games", "Case Study Competitions"],
+      "sports_facilities": ["Business Incubation Center", "Case Study Rooms"],
       "admission_process": "Admission is based on CAT or GMAT scores, followed by a group discussion and personal interview.",
       "rating": 4.6
     },
@@ -68,6 +72,7 @@
       "research_work": "The college focuses on research in new treatment methods and disease prevention.",
       "sport": "Medicine",
       "sports_categories": ["Medicine", "Surgery", "Pharmacology"],
+      "sports_facilities": ["State-of-the-art Medical Labs", "Surgery Simulation Center"],
       "admission_process": "Admission is based on NEET-UG scores, and candidates need to undergo counseling.",
       "rating": 4.9
     },
@@ -82,6 +87,7 @@
       "research_work": "The institute conducts research on climate change, biodiversity, and pollution control.",
       "sport": "Ecology",
       "sports_categories": ["Ecology", "Sustainable Development"],
+      "sports_facilities": ["Environmental Research Labs", "Biodiversity Conservation Center"],
       "admission_process": "Admission is through an entrance exam and personal interview to assess the candidates' passion for environmental sciences.",
       "rating": 4.3
     },
@@ -96,6 +102,7 @@
       "research_work": "The school conducts research in areas of human rights, constitutional law, and arbitration.",
       "sport": "Moot Court",
       "sports_categories": ["Moot Court", "Debates", "Client Counseling"],
+      "sports_facilities": ["Moot Courtrooms", "Debate Halls"],
       "admission_process": "Admission is based on CLAT scores, followed by a personal interview to assess the candidates' legal aptitude.",
       "rating": 4.7
     },
@@ -110,6 +117,7 @@
       "research_work": "The university conducts research on sports physiology, nutrition, and performance analysis.",
       "sport": "Track and Field",
       "sports_categories": ["Track and Field", "Team Sports", "Individual Sports"],
+      "sports_facilities": ["Athletics Stadium", "Sports Science Labs", "Fitness Center"],
       "admission_process": "Admission is based on sports trials and fitness assessment.",
       "rating": 4.4
     }

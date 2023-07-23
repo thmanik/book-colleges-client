@@ -55,7 +55,7 @@ const Colleges = () => {
                         <p><span className="font-bold"> Research History:</span>{college?.research_history}</p>
                       <div className="flex">
                       <p className="mt-2"><span className="font-bold"> Admission Date:</span>{college?.admission_date}</p>
-                       <Link to={`/allColleges/${college._id}`}><button className="btn btn-sm btn-color">Details</button></Link>
+                       <Link to={`/allColleges/${college._id}`}><button className="btn  btn-color btn-circle">Details</button></Link>
                       </div>
                     </div>
                   </div></div>)
