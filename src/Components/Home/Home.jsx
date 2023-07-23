@@ -1,9 +1,10 @@
+import Colleges from "../Colleges/Colleges";
 
 
 const Home = () => {
     return (
         <div>
-             homeeeeeeeeeeeee
+            <Colleges></Colleges>
         </div>
     );
 };

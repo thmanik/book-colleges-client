@@ -1,0 +1,117 @@
+
+
+  [
+    {
+      "college_image": "https://i.ibb.co/tz5w3R6/college-1.jpg",
+      "college_name": "University of XYZ",
+      "admission_date": "2023-08-15",
+      "event": "Annual College Fest",
+      "events_details": "The annual college fest will be held from October 12th to October 15th. It will feature various cultural, technical, and sports events.",
+      "research_history": "Established in 1950, the University of XYZ has a rich history of groundbreaking research in multiple fields.",
+      "number_of_research": 1500,
+      "research_work": "The university focuses on cutting-edge technology research and medical advancements.",
+      "sport": "Football",
+      "sports_categories": ["Football", "Basketball", "Swimming", "Tennis"],
+      "admission_process": "Admission is based on a rigorous entrance exam followed by a personal interview.",
+      "rating": 4.8
+    },
+    {
+      "college_image": "https://i.ibb.co/dk9dvjC/college-5.jpg",
+      "college_name": "ABC Institute of Technology",
+      "admission_date": "2023-09-01",
+      "event": "Tech Expo",
+      "events_details": "The Tech Expo will be held on November 20th. It will showcase innovative projects from students and faculty.",
+      "research_history": "ABC Institute of Technology is renowned for its significant contributions to the field of computer science.",
+      "number_of_research": 1200,
+      "research_work": "The institute focuses on research areas such as AI, machine learning, and cybersecurity.",
+      "sport": "Cricket",
+      "sports_categories": ["Cricket", "Badminton", "Volleyball"],
+      "admission_process": "Admission is based on merit, and applicants need to submit their JEE Main scores.",
+      "rating": 4.5
+    },
+    {
+      "college_image": "https://i.ibb.co/bFk2dVH/college-8.jpg",
+      "college_name": "Arts & Culture College",
+      "admission_date": "2023-07-30",
+      "event": "Annual Art Exhibition",
+      "events_details": "The college's Annual Art Exhibition will take place in September, showcasing the creativity and talents of its students.",
+      "research_history": "The Arts & Culture College is dedicated to the preservation and promotion of various cultural art forms.",
+      "number_of_research": 800,
+      "research_work": "The college conducts research in various art forms and techniques of preservation.",
+      "sport": "Painting",
+      "sports_categories": ["Painting", "Sculpture", "Dance"],
+      "admission_process": "Admission is based on a portfolio assessment and an interview to gauge the students' artistic potential.",
+      "rating": 4.2
+    },
+    {
+      "college_image": "https://i.ibb.co/h1tWfkS/college-3.jpg",
+      "college_name": "Business School of XYZ",
+      "admission_date": "2023-10-10",
+      "event": "International Business Summit",
+      "events_details": "The Business School's International Business Summit is scheduled for December and will host industry leaders and entrepreneurs.",
+      "research_history": "The Business School has a strong history of fostering business innovation and entrepreneurial ventures.",
+      "number_of_research": 1000,
+      "research_work": "The school conducts research on market trends, startup strategies, and economic policies.",
+      "sport": "Management Games",
+      "sports_categories": ["Management Games", "Case Study Competitions"],
+      "admission_process": "Admission is based on CAT or GMAT scores, followed by a group discussion and personal interview.",
+      "rating": 4.6
+    },
+    {
+      "college_image": "https://i.ibb.co/bQ6QkTS/college-6.jpg",
+      "college_name": "Medical College of ABC",
+      "admission_date": "2023-08-20",
+      "event": "Medical Conference",
+      "events_details": "The Medical College will host a Medical Conference in October, bringing together experts to discuss the latest medical advancements.",
+      "research_history": "The Medical College of ABC is known for its significant contributions to medical breakthroughs and healthcare research.",
+      "number_of_research": 1800,
+      "research_work": "The college focuses on research in new treatment methods and disease prevention.",
+      "sport": "Medicine",
+      "sports_categories": ["Medicine", "Surgery", "Pharmacology"],
+      "admission_process": "Admission is based on NEET-UG scores, and candidates need to undergo counseling.",
+      "rating": 4.9
+    },
+    {
+      "college_image": "https://i.ibb.co/kXJxFnJ/college-7.jpg",
+      "college_name": "Environmental Sciences Institute",
+      "admission_date": "2023-09-15",
+      "event": "Environmental Awareness Week",
+      "events_details": "The institute will organize an Environmental Awareness Week in November to educate and engage the community on environmental issues.",
+      "research_history": "The Environmental Sciences Institute is dedicated to research on environmental conservation and sustainability.",
+      "number_of_research": 600,
+      "research_work": "The institute conducts research on climate change, biodiversity, and pollution control.",
+      "sport": "Ecology",
+      "sports_categories": ["Ecology", "Sustainable Development"],
+      "admission_process": "Admission is through an entrance exam and personal interview to assess the candidates' passion for environmental sciences.",
+      "rating": 4.3
+    },
+    {
+      "college_image": "https://i.ibb.co/VJ73tG9/college-4.jpg",
+      "college_name": "Law School of ABC",
+      "admission_date": "2023-07-25",
+      "event": "National Moot Court Competition",
+      "events_details": "The Law School will host a National Moot Court Competition in September, providing a platform for law students to showcase their advocacy skills.",
+      "research_history": "The Law School of ABC is recognized for its legal research and contributions to the field of law.",
+      "number_of_research": 1300,
+      "research_work": "The school conducts research in areas of human rights, constitutional law, and arbitration.",
+      "sport": "Moot Court",
+      "sports_categories": ["Moot Court", "Debates", "Client Counseling"],
+      "admission_process": "Admission is based on CLAT scores, followed by a personal interview to assess the candidates' legal aptitude.",
+      "rating": 4.7
+    },
+    {
+      "college_image": "https://i.ibb.co/S32WyTF/college-2.jpg",
+      "college_name": "Sports and Athletics University",
+      "admission_date": "2023-08-05",
+      "event": "Intercollegiate Sports Meet",
+      "events_details": "The university will host an Intercollegiate Sports Meet in October, providing a platform for student-athletes to showcase their skills.",
+      "research_history": "The Sports and Athletics University is a pioneer in sports research and athlete development.",
+      "number_of_research": 500,
+      "research_work": "The university conducts research on sports physiology, nutrition, and performance analysis.",
+      "sport": "Track and Field",
+      "sports_categories": ["Track and Field", "Team Sports", "Individual Sports"],
+      "admission_process": "Admission is based on sports trials and fitness assessment.",
+      "rating": 4.4
+    }
+  ]
+  

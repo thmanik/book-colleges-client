@@ -11,3 +11,17 @@ body{
 .color{
   color: #FEAB01;
 }
+.button{
+  border-radius: 15px;
+}
+.btn-color{
+  background-color:#014C63 ;
+  color:#FEAB01;
+}
+.btn-color:hover{
+ background-color:#FEAB01 ;
+ color: #014C63;
+}
+.text-color{
+  color: #014C63;
+}
