@@ -3,11 +3,14 @@ import  { useContext, useState } from 'react';
 
 import './Registration.css'
 import { AuthContext } from '../Providers/AuthProvider/AuthProvider';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 
 
 const Registration = () => {
-
+ const location=useLocation()
+ const navigate=useNavigate()
+ const from=location?.state?.from?.pathname ||'/'
   const{createUser,updateUserData}=useContext(AuthContext)
   const [error, setError]=useState('');
   
@@ -29,6 +32,8 @@ const Registration = () => {
           const loggedUser=result.user
           console.log(loggedUser)
           updateUserData(result.user, name, photo)
+          navigate(from,{replace:true})
+
       })
       .catch(error=>{
           console.log(error)
@@ -81,6 +86,9 @@ const Registration = () => {
         <div className="form-control mt-6">
           <button className="btn btn-color ">Registration</button>
         </div>
+              <label className="label">
+                <p>Already have an account?<Link className='new-user-btn color ' to='/login'>Login</Link></p>
+              </label>
       </form>
     </div>
   </div>

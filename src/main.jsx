@@ -16,10 +16,13 @@ import AuthProvider from './Components/Providers/AuthProvider/AuthProvider.jsx';
 import PrivateRoute from './Components/Routes/PrivateRoute/PrivateRoute.jsx';
 import Admission from './Components/Admission/Admission.jsx';
 import ApplyForm from './Components/ApplyForm/ApplyForm.jsx';
+import MyCollege from './Components/MyCollege/MyCollege.jsx';
+import ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
     element:<Main></Main>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
       {
         path:"/",
@@ -27,7 +30,7 @@ const router = createBrowserRouter([
       },
       {
         path:"allColleges/:id",
-        element:<SingleCardDetails></SingleCardDetails>,
+        element:<PrivateRoute><SingleCardDetails></SingleCardDetails></PrivateRoute>,
         loader:({params})=>fetch(`http://localhost:5000/allColleges/${params.id}`)
       },
       {
@@ -44,12 +47,16 @@ const router = createBrowserRouter([
       },
       {
         path:"admission",
-        element:<Admission></Admission>
+        element:<PrivateRoute><Admission></Admission></PrivateRoute>
       },
       {
         path:"applyForm/:id",
         element:<ApplyForm></ApplyForm>,
         loader:({params})=>fetch(`http://localhost:5000/applyForm/${params.id}`)
+      },
+      {
+        path:"mycollege",
+        element:<MyCollege></MyCollege>
       }
     ]
   },

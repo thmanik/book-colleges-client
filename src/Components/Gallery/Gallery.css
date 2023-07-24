@@ -1,0 +1,10 @@
+.image-size{
+    width: 350px;
+    height: 230px;
+    border: 1px solid #014C63;
+    border-radius: 30px;
+    opacity: .5;
+}
+.image-size:hover{
+    opacity: 1;
+}

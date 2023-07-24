@@ -48,7 +48,7 @@ const Login = () => {
 
     const handleGoogleLogin = () => {
         googleLogin()
-            .then((result) => {
+        .then((result) => {
                 // This gives you a Google Access Token. You can use it to access Google APIs.
                 const credential = GoogleAuthProvider.credentialFromResult(result);
 
@@ -111,7 +111,7 @@ const Login = () => {
                             </div>
 
                             <label className="label">
-                                <p>New User?<Link className='new-user-btn' to='/registration'>Registration</Link> here.</p>
+                                <p>New User?<Link className='new-user-btn color' to='/registration'>Registration</Link> here.</p>
                             </label>
                         </form>
                    

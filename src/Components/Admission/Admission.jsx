@@ -34,7 +34,7 @@ const Admission = () => {
                     <tbody>
                         {
                             collegesInfo.map((collegeInfo,index)=><><tr>
-                                <th className="text-color font-bold">{index}</th>
+                                <th className="text-color font-bold">{index+1}</th>
                                 <td className="text-color font-extrabold hover-effect"><Link to={`/applyForm/${collegeInfo?._id}`}>{collegeInfo.college_name}</Link></td>
                               
                             </tr></>)

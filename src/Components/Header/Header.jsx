@@ -21,7 +21,7 @@ const Header = () => {
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/colleges'>Colleges</Link></li>
         <li><Link to='/admission' >Admission</Link ></li>
-        <li><Link to=''>My College</Link ></li>
+        <li><Link to='/mycollege'>My College</Link ></li>
         {
           user ? <><img title={user?.displayName} className="rounded-full ms-3 user-img" src={user?.photoURL} alt="" /> <Link onClick={handleLogOut} className="ms-2 text-black">LogOut</Link></>:<><li><Link to='/login'>Login</Link ></li>
           <li><Link to='/registration'>Registration</Link ></li></>
@@ -36,7 +36,7 @@ const Header = () => {
       <li><Link to='/'>Home</Link></li>
       <li><Link to='/colleges'>Colleges</Link></li>
       <li><Link to='/admission'>Admission</Link></li>
-      <li><Link to=''>My College</Link></li>
+      <li><Link to='/mycollege'>My College</Link></li>
       {
           user ? <><img title={user?.displayName} className="rounded-full ms-3 mt-1 user-img" src={user?.photoURL} alt="" /> <Link onClick={handleLogOut} className="ms-2 text-white mt-2">LogOut</Link></>:<><li><Link to='/login'>Login</Link ></li>
           <li><Link to='/registration'>Registration</Link ></li></>
