@@ -35,7 +35,7 @@ const Admission = () => {
                         {
                             collegesInfo.map((collegeInfo,index)=><><tr>
                                 <th className="text-color font-bold">{index}</th>
-                                <td className="text-color font-extrabold hover-effect"><Link to='/applyForm'>{collegeInfo.college_name}</Link></td>
+                                <td className="text-color font-extrabold hover-effect"><Link to={`/applyForm/${collegeInfo?._id}`}>{collegeInfo.college_name}</Link></td>
                               
                             </tr></>)
                         }

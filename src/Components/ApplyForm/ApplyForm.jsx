@@ -1,125 +1,123 @@
-import { useForm } from "react-hook-form";
 import { useContext } from "react";
-
-import Swal from "sweetalert2";
 import { AuthContext } from "../Providers/AuthProvider/AuthProvider";
+import { useLoaderData } from "react-router-dom";
+import Swal from "sweetalert2";
 
-const AddAToy = () => {
+
+
+const ApplyForm = () => {
+   const data=useLoaderData()
+   console.log('heloooooooooo', data)
     const {user}=useContext(AuthContext)
-   
+  
+
+  const handleRegister = event => {
+      event.preventDefault();
+      const form = event.target;
+      const collegeName = form.collegeName.value;
+      const name = form.name.value;
+      const email = form.email.value;
+      const phoneNumber =  form.phoneNumber.value;
+      const subject = form.subject.value;
+      const dateOfBirth = form.dateOfBirth.value;
+      const photo = form.photo.value;
+      const userdata={
+        collegeName,name,phoneNumber,subject,dateOfBirth,  photo, email
+      }
 
 
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = (data) => {
-
-         
-        fetch('https://toy-box-server-topaz.vercel.app/addedProduct',{
-            method:"POST",
-            headers:{
-                'content-type':'application/json'
-            },
-            body:JSON.stringify(data)
-        })
-        .then(res => res.json())
-        .then(result=>{
-            console.log(result)
-            if(result.insertedId){
-                Swal.fire({
-                    position: 'top-center',
-                    icon: 'success',
-                    title: 'Your Post has been saved',
-                    showConfirmButton: false,
-                    timer: 1500
-                })
- 
-           }
-                
-         
-                 
-          
-        })
-
+      console.log(collegeName, name)
+      fetch('http://localhost:5000/userInfo',{
+        method:"POST",
+        headers:{
+            'content-type':'application/json'
+        },
+        body:JSON.stringify(userdata)
+      })
+      .then(res=>res.json())
+      .then(data=>{
         console.log(data)
+        if(data.insertedId){
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Your work has been saved',
+                showConfirmButton: false,
+                timer: 1500
+              })
+        }
+      })
+      
+      form.reset();
 
-    }
-
+  }
+    
 
 
     return (
-        <div className=" ">
-            <div className="grid  md:grid-cols-2  sm:grid-cols-1 md:ms-96">
-                <div className="addAtoy ">
-                    <form className="form-formate" onSubmit={handleSubmit(onSubmit)}>
-
-                        <input
-                            className="text-input mt-2 py-3 px-14 px- me-4"
-                            {...register("sellerName")}
-                            placeholder="Seller Name"
-                            defaultValue={user?.displayName}
-                        />
-                        <input
-                            className="text-input mt-2 py-3 px-14 px- me-4"
-                            {...register("email")}
-                            placeholder="Email address"
-                            defaultValue={user?.email}
-                        />
-                        <input
-                            className="text-input mt-2 py-3 px-14 px- me-4"
-                            {...register("toyName")}
-                            placeholder="Toy Name"
-                            defaultValue=""
-                        />
-                        <input
-                            className="text-input mt-2 py-3 px-14 px- me-4"
-                            {...register("image")}
-                            placeholder=" Toy Image Link"
-                            defaultValue=""
-                        />
-                        <input
-                            className="text-input mt-2 py-3 px-14 px- me-4"
-                            
-                            {...register("price")}
-                            placeholder="Price"
-                            defaultValue=""
-                        />
-                        <input
-                            className="text-input mt-2 py-3 px-14 px- me-4"
-                            {...register("ratting")}
-                            placeholder="Product Ratting"
-                            defaultValue=""
-                        />
-                        <select className="md:me-16 py-3 px-20  mt-2" {...register("subCategory")}>
-                            <option disabled selected>Select Category</option>
-                            <option value="sport_car">sport-car</option>
-                            <option value="truck">truck</option>
-                            <option value="polic_car">police-car</option>
-                        </select>
-                        <input
-                            className="text-input mt-2 py-3 px-14 px- md:me-4"
-                            {...register("available_quantity")}
-                            placeholder="Available Quantity"
-                            defaultValue=""
-                        />
-                        <textarea
-                            className="text-input mt-2 py-3 px-16 px- md:me-4"
-                            {...register("description")}
-                            placeholder="Product Description"
-                            defaultValue=""
-                        />
-
-
-                        {/* <input {...register("exampleRequired", { required: true })} /> */}
-
-                        {errors.exampleRequired && <span>This field is required</span>}
-
-
-
-                        <br></br><input className="btn submit-btn my-2 ms-1 w-72" type="submit" value='Add Toy' />
-                    </form>
-                </div>
-            </div>
+        
+            <div className="hero min-h-screen bg-base-200 py-6">
+  <div className="">
+    
+    <div className="card w-full max-w-sm shadow-2xl bg-base-100">
+    <div className="text-center ">
+      <h1 className="text-2xl  text-color mt-4 font-bold">Application Form</h1>
+    </div>
+      <form onSubmit={handleRegister}  className="card-body">
+        
+      <div className="form-control">
+          <label className="">
+            <span className="label-text text-color">College Name</span>
+          </label>
+          <input type="text" name="collegeName" placeholder="College Name" className="text-color input input-bordered" defaultValue={data?.college_name} readOnly />
         </div>
+      <div className="form-control">
+          <label className="">
+            <span className="label-text text-color">Candidate Name</span>
+          </label>
+          <input type="text" name="name" placeholder="name" className="text-color input input-bordered" defaultValue={user?.displayName} readOnly  />
+        </div>
+        <div className="form-control">
+          <label className="">
+            <span className="label-text text-color">Email</span>
+          </label>
+          <input type="email" name="email" placeholder="email" className="text-color input input-bordered"defaultValue={user?.email} readOnly  />
+        </div>
+        <div className="form-control">
+        <label className="">
+            <span className="label-text text-color">Phone Number</span>
+          </label>
+          <input type="text" name="phoneNumber" placeholder="Phone Number" className="text-color input input-bordered" required />
+        </div>
+        <div className="form-control">
+          <label className="">
+            <span className="label-text text-color">Subject</span>
+          </label>
+          <input type="text" name="subject" placeholder="Subject Name" className="text-color input input-bordered" required />
+        </div>
+        <div className="form-control">
+          <label className="">
+            <span className="label-text text-color">Date Of Birth</span>
+          </label>
+          <input type="date" name="dateOfBirth" placeholder="Date Of Birth" className="text-colorinput input-bordered"required />
+        
+        </div>
+        <div className="form-control">
+          <label className="">
+            <span className="label-text text-color">Photo URL</span>
+          </label>
+          <input type="text"name="photo" placeholder="Photo URL" className=" text-color input input-bordered" required/>
+        </div>
+    
+        <div className="form-control mt-6">
+          <button className="btn btn-color ">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+       
     );
 };
 
-export default AddAToy;
+export default ApplyForm;

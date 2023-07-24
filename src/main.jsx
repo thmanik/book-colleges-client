@@ -47,8 +47,9 @@ const router = createBrowserRouter([
         element:<Admission></Admission>
       },
       {
-        path:"applyForm",
-        element:<ApplyForm></ApplyForm>
+        path:"applyForm/:id",
+        element:<ApplyForm></ApplyForm>,
+        loader:({params})=>fetch(`http://localhost:5000/applyForm/${params.id}`)
       }
     ]
   },
