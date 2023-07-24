@@ -31,11 +31,11 @@ const router = createBrowserRouter([
       {
         path:"allColleges/:id",
         element:<PrivateRoute><SingleCardDetails></SingleCardDetails></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/allColleges/${params.id}`)
+        loader:({params})=>fetch(`https://book-college-server-seven.vercel.app/allColleges/${params.id}`)
       },
       {
         path:"colleges",
-        element:<PrivateRoute><CollegeRoute></CollegeRoute></PrivateRoute>
+        element:<CollegeRoute></CollegeRoute>
       },
       {
         path:"login",
@@ -52,11 +52,11 @@ const router = createBrowserRouter([
       {
         path:"applyForm/:id",
         element:<ApplyForm></ApplyForm>,
-        loader:({params})=>fetch(`http://localhost:5000/applyForm/${params.id}`)
+        loader:({params})=>fetch(`https://book-college-server-seven.vercel.app/applyForm/${params.id}`)
       },
       {
         path:"mycollege",
-        element:<MyCollege></MyCollege>
+        element:<PrivateRoute><MyCollege></MyCollege></PrivateRoute>
       }
     ]
   },

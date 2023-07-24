@@ -7,7 +7,7 @@ const Admission = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/allColleges')
+        fetch('https://book-college-server-seven.vercel.app/allColleges')
             .then(res => res.json())
             .then(data => {
                 console.log(data)

@@ -9,7 +9,7 @@ const Colleges = () => {
 
 
     useEffect(()=>{
-        fetch('http://localhost:5000/allColleges')
+        fetch('https://book-college-server-seven.vercel.app/allColleges')
         .then(res=>res.json())
         .then(data=>{
             console.log(data)
@@ -18,7 +18,7 @@ const Colleges = () => {
     },[])
 
     const handleSearch = () => {
-        fetch(`http://localhost:5000/allColleges/${searchText}`)
+        fetch(`https://book-college-server-seven.vercel.app/allColleges/${searchText}`)
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);

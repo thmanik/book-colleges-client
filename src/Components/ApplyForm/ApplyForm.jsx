@@ -27,7 +27,7 @@ const ApplyForm = () => {
 
 
       console.log(collegeName, name)
-      fetch('http://localhost:5000/userInfo',{
+      fetch('https://book-college-server-seven.vercel.app/userInfo',{
         method:"POST",
         headers:{
             'content-type':'application/json'
