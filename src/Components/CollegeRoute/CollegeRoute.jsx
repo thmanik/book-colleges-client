@@ -17,10 +17,10 @@ const CollegeRoute = () => {
     return (
         <div>
             <div className="text-center font-extrabold text-4xl my-5 text-color underline">College Information</div>
-            <div className="grid card-sizee md:grid-cols-3 sm:grid-cols-1  ms-12">
+            <div className="grid card-sizee md:grid-cols-4 sm:grid-cols-1 m-5 ">
             {
-                colleges.map(college=><div key={college._id}><div className="card w-80 mt-5 m-1 bg-base-100 shadow-xl image-full ">
-                <figure><img className="" src={college.college_image} alt="Shoes" /></figure>
+                colleges.map(college=><div  className="w-72 " key={college._id}><div className="card college-card w-80 m-5 bg-base-100 shadow-xl image-full ">
+                <figure><img  src={college.college_image} alt="Shoes" width={330} height={230} /></figure>
                 <div className="card-body">
                   <h2 className="card-title">{college.college_name}</h2>
                   <p className=""><span className="font-bold ">Rating:</span>:{college.rating}</p>
