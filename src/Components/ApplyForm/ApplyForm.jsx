@@ -59,7 +59,7 @@ const ApplyForm = () => {
             <div className="hero min-h-screen bg-base-200 py-6">
   <div className="">
     
-    <div className="card w-full max-w-sm shadow-2xl bg-base-100">
+    <div className="card apply-card max-w-sm shadow-2xl bg-base-100">
     <div className="text-center ">
       <h1 className="text-2xl  text-color mt-4 font-bold">Application Form</h1>
     </div>

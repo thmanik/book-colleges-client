@@ -1,0 +1,56 @@
+.about-title{
+    color: #FF7350;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.about-heading{
+    color: black;
+    font-size: 45px;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+.descript-1{
+    font-size: 20px;
+    color: #014C63;
+}
+.descript-2{
+    color: gray;
+    font-size: 17px;
+}
+.badgee{
+    background-color: #FF7350;
+    border-radius: 50px;
+}
+.point-descript{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+.description{
+    font-size: 18px;
+    color: gray;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .about-img{
+    padding:20px;
+  }
+  .about-descrip{
+    padding: 20px;
+  }
+  .about-title{
+  font-size: 20px;
+  }
+  .about-heading{
+   font-size: 30px;
+  }
+  .about-section{
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+ 
+      }

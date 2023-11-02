@@ -6,6 +6,9 @@
   width: 100%;
   height: 80%;
 }
+.search-icon{
+  margin-top: 10px;
+}
 
 @media only screen and (max-width: 600px) {
    .card-section{

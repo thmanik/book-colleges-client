@@ -7,21 +7,32 @@ body{
   margin: 0;
   padding: 0;
 }
+/* #FEAB01 */
 .icon-color{
-  color: #FEAB01;
+  color: #FF7350;
 }
 .color{
-  color: #FEAB01;
+  color: #FF7350;
 }
 .button{
   border-radius: 15px;
 }
 .btn-color{
   background-color:#014C63 ;
-  color:#FEAB01;
+  color:white;
 }
+.btn-colors{
+  background-color:#014C63 ;
+  color:white;
+  border-radius: 10px;
+
+}
+.btn-colors:hover{
+  background-color:#FF7350 ;
+  color: #014C63;
+ }
 .btn-color:hover{
- background-color:#FEAB01 ;
+ background-color:#FF7350 ;
  color: #014C63;
 }
 .text-color{
@@ -29,5 +40,18 @@ body{
 }
 .background-color{
   background-color: #014C63;
-  color: #FEAB01;
+  color: #FF7350;
+}
+
+.card-edit:hover{
+  border: 1px solid #014C63;
+  border-radius: 10px;
+  transform: scale(1.06);
+  transition: .6s;
+  cursor:context-menu;
+}
+
+/* applyForm */
+.apply-card{
+ width: 80vh;
 }
