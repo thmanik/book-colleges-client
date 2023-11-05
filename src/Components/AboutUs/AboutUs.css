@@ -9,6 +9,10 @@
     font-weight: bolder;
     margin-top: 15px;
 }
+.text-color{
+    color: #FF7350;
+    font-style: italic;
+}
 .descript-1{
     font-size: 20px;
     color: #014C63;

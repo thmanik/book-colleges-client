@@ -3,7 +3,7 @@ import './Gallery.css'
 const Galley = () => {
     return (
      <div className='pb-10 px-12'>
-      <div><h1 className='text-center text-color font-semibold text-3xl py-5' >Graduation Photo Gallery</h1></div>
+      <div><h1 className='text-center text-color font-semibold text-3xl pt-6 pb-10' >Graduation Photo Gallery</h1></div>
    
       
 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

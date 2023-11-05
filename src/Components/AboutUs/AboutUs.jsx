@@ -1,5 +1,5 @@
 import "./AboutUs.css"
-import { FaGraduationCap,FaArrowRight } from "react-icons/fa";
+import { FaGraduationCap } from "react-icons/fa";
 
 const AboutUs = () => {
     
@@ -7,7 +7,7 @@ const AboutUs = () => {
         <div className='about-section grid md:grid-cols-2  sm:grid-rows-1 gap-2 md:m-20'>
           <div className="md:p-10 about-img"><img className="img-fluid " src="https://i.ibb.co/XCKCGx9/about-img-02.png" alt="" /></div>
           <div className=" md:py-6 md:px-10 about-descrip">
-            <p className="about-title flex"><FaGraduationCap className="m-1"></FaGraduationCap><span > About Us</span></p>
+            <p className="about-title flex"><FaGraduationCap className="m-1"></FaGraduationCap><span className="text-color" > About Us</span></p>
             <p className="about-heading">A Few Words About Our Service</p>
             <p className="descript-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita blanditiis placeat itaque non magnam sequi excepturi </p>
             <p className="descript-2 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita blanditiis placeat itaque non magnam sequi excepturi </p>
@@ -30,3 +30,4 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+

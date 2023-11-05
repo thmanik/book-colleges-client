@@ -1,0 +1,68 @@
+.best-featuretitle{
+    font-size: 55px;
+    font-weight: bolder;
+    color: white;
+ 
+}
+.backround-color{
+    background-color: #014C63;
+    border-radius: 10px;
+}
+.feature-class{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color: white;
+
+  
+}
+.feature-des{
+    font-size: 18px;
+}
+.sub-title{
+    font-size: 22px;
+    font-weight: bold;
+}
+.image{
+    object-fit: contain;
+    animation: move 3s infinite ease alternate;
+}
+@keyframes move{
+    from{
+        transform: translateY(-15px);
+
+    }
+    to{
+        transform: translateY(0px) scale(1.1);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+ .best-featuretitle{
+    font-size: 30px;
+ }
+ .backround-color{
+    margin: 0px;
+    padding: 0px;
+ }
+ .best-featureSection{
+    padding: 8px;
+ }
+ .feature-des{
+    padding: 10px;
+    text-align: center;
+ }
+ .sub-BfeatureTitle{
+    padding: 10px;
+    margin: 0;
+ }
+ .sub-title{
+    padding: 5px;
+    margin: 0px;
+ }
+ .main-title{
+    padding:5px 16px;
+    margin: 0px;
+ }
+   
+   }

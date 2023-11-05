@@ -16,6 +16,12 @@
  }
  .gallery-section{
     background-color: #025c77;
+}
+.text-color{
+    color: #FF7350;
+    font-style: italic;
+ 
+
 } 
 
 @media only screen and (min-width:1020px) {
