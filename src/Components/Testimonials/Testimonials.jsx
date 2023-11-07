@@ -105,6 +105,66 @@ class Testimonials extends Component {
 <p className="positon">Student</p></div>
 </div>
 </div>
+<div className="p-2 "><div className="comments">
+<img className="m-auto" src="https://i.ibb.co/y5HcSqW/client-says.png" alt="" />
+<p className="py-5 comments-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo impedit repudiandae incidunt obcaecati quod dolorem consectetur odio aut adipisci numquam!</p>
+<img className="client-image m-auto " src="https://i.ibb.co/L63wdVD/userphoto.jpg" alt="" />
+<div className="text-center">
+<h2 className="clients-name">Alondra Deo</h2>
+<p className="positon">Student</p></div>
+</div>
+</div>
+
+<div className="p-2 "><div className="comments">
+<img className="m-auto" src="https://i.ibb.co/y5HcSqW/client-says.png" alt="" />
+<p className="py-5 comments-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo impedit repudiandae incidunt obcaecati quod dolorem consectetur odio aut adipisci numquam!</p>
+<img className="client-image m-auto " src="https://i.ibb.co/t3gBkmd/instructor-3.jpg" alt="" />
+<div className="text-center">
+<h2 className="clients-name">Margie Dose</h2>
+<p className="positon">Student</p></div>
+</div>
+</div>
+
+  <div className="p-2 "><div className="comments">
+<img className="m-auto" src="https://i.ibb.co/y5HcSqW/client-says.png" alt="" />
+<p className="py-5 comments-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo impedit repudiandae incidunt obcaecati quod dolorem consectetur odio aut adipisci numquam!</p>
+<img className="client-image m-auto " src="https://i.ibb.co/mDnmR8Y/beautiful-woman-street.jpg" alt="" />
+<div className="text-center">
+<h2 className="clients-name">Alayna Deo</h2>
+<p className="positon">Student</p></div>
+</div>
+</div>
+
+  <div className="p-2 "><div className="comments">
+<img className="m-auto" src="https://i.ibb.co/y5HcSqW/client-says.png" alt="" />
+<p className="py-5 comments-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo impedit repudiandae incidunt obcaecati quod dolorem consectetur odio aut adipisci numquam!</p>
+<img className="client-image m-auto " src="https://i.ibb.co/c355p0z/instructor-4.jpg" alt="" />
+<div className="text-center">
+<h2 className="clients-name">Henry Mash</h2>
+<p className="positon">Student</p></div>
+</div>
+</div>
+
+  <div className="p-2 "><div className="comments">
+<img className="m-auto" src="https://i.ibb.co/y5HcSqW/client-says.png" alt="" />
+<p className="py-5 comments-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo impedit repudiandae incidunt obcaecati quod dolorem consectetur odio aut adipisci numquam!</p>
+<img className="client-image m-auto " src="https://i.ibb.co/mXCzj72/instructor-2.jpg" alt="" />
+<div className="text-center">
+<h2 className="clients-name">Jhon Deo</h2>
+<p className="positon">Student</p></div>
+</div>
+</div>
+
+  <div className="p-2 "><div className="comments">
+<img className="m-auto" src="https://i.ibb.co/y5HcSqW/client-says.png" alt="" />
+<p className="py-5 comments-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo impedit repudiandae incidunt obcaecati quod dolorem consectetur odio aut adipisci numquam!</p>
+<img className="client-image m-auto " src="https://i.ibb.co/L63wdVD/userphoto.jpg" alt="" />
+<div className="text-center">
+<h2 className="clients-name">Alondra Deo</h2>
+<p className="positon">Student</p></div>
+</div>
+</div>
+
 
 
 

@@ -1,6 +1,8 @@
 .testimonials-title{
-    font-size: 22px;
     color: #FF7350;
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: italic;
 }
 .testimonials-subTitle{
     font-size: 45px;

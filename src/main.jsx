@@ -31,7 +31,7 @@ const router = createBrowserRouter([
       {
         path:"allColleges/:id",
         element:<PrivateRoute><SingleCardDetails></SingleCardDetails></PrivateRoute>,
-        loader:({params})=>fetch(`https://book-college-server-seven.vercel.app/allColleges/${params.id}`)
+        loader:({params})=>fetch(`https://book-college-server-1neisge2c-manikonline.vercel.app/allColleges/${params.id}`)
       },
       {
         path:"colleges",
@@ -52,7 +52,7 @@ const router = createBrowserRouter([
       {
         path:"applyForm/:id",
         element:<ApplyForm></ApplyForm>,
-        loader:({params})=>fetch(`https://book-college-server-seven.vercel.app/applyForm/${params.id}`)
+        loader:({params})=>fetch(`https://book-college-server-1neisge2c-manikonline.vercel.app/applyForm/${params.id}`)
       },
       {
         path:"mycollege",

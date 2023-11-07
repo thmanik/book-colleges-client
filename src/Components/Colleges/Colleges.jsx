@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import {  FaSearch } from "react-icons/fa";
 
 const Colleges = () => {
-    const [products, setProducts] = useState([])
+    
     const [searchText, setSearchText] = useState("");
     const [colleges, setColleges]=useState([])
-
+    console.log(searchText)
    
     useEffect(()=>{
-        fetch('https://book-college-server-seven.vercel.app/allColleges')
+        fetch('https://book-college-server-1neisge2c-manikonline.vercel.app/allColleges')
         .then(res=>res.json())
         .then(data=>{
             console.log(data)
@@ -19,11 +19,11 @@ const Colleges = () => {
     },[])
 
     const handleSearch = () => {
-        fetch(`https://book-college-server-seven.vercel.app/allColleges/${searchText}`)
+        fetch(`https://book-college-server-1neisge2c-manikonline.vercel.app/collegeSearchByCollegeName/${searchText}`)
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);
-                setProducts(data);
+                setColleges(data);
             });
     };
 

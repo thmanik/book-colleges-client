@@ -1,4 +1,22 @@
 .imagee-size{
-    width: 660px;
+    width: 860px;
     height: 420px;
 }
+.college-name{
+    color: #014C63;
+    font-size: 30px;
+}
+.check-icon{
+    color: #FF7350;
+}
+@media only screen and (max-width: 600px) {
+ .singleCard-section{
+    padding: 10px;
+    margin: 10px;
+ }
+ .college-name{
+    color: #014C63;
+    font-size: 25px;
+}
+
+        }
