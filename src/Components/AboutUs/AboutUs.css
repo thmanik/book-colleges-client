@@ -3,6 +3,7 @@
     font-size: 30px;
     font-weight: bolder;
 }
+
 .about-heading{
     color: black;
     font-size: 45px;
@@ -40,21 +41,51 @@
 
 @media only screen and (max-width: 600px) {
   .about-img{
-    padding:20px;
+    padding:40px;
   }
-  .about-descrip{
-    padding: 20px;
-  }
+  .point-descript{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+}
+.des-point{
+    font-size: 16px;
+    font-weight: bold;
+}
   .about-title{
   font-size: 20px;
+  padding: 0px 20px;
   }
   .about-heading{
-   font-size: 30px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 0px 30px;
+}
+  .descript-1{
+    padding: 0px 30px;
+  }
+  .descript-2{
+    padding: 0px 30px;
+  }
+  .spacial-point{
+    padding: 0px 12px;
+  }
+  .about-btn{
+    padding: 0px 30px;
   }
   .about-section{
     margin-top: 25px;
     margin-bottom: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0 10px;
   }
+
 
  
       }
