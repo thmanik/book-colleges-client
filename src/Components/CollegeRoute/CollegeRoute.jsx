@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import './CollegeRoute.css'
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 
 const CollegeRoute = () => {
@@ -17,6 +18,11 @@ const CollegeRoute = () => {
     },[])
     return (
         <div>
+             <Helmet>
+                <meta charSet="utf-8" />
+                <title>Colleges-Book college</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <div className="text-center font-extrabold text-4xl my-5 text-color underline">College Information</div>
             <div className="grid card-sizee md:grid-cols-4 sm:grid-cols-1 m-5 ">
             {

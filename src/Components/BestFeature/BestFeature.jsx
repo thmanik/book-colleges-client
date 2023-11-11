@@ -1,9 +1,11 @@
+
 import './BestFeature.css'
 
 
 const BestFeature = () => {
     return (
         <div className="grid best-featureSection sm:grid-cols-1 md:grid-cols-2 gap-5 text-white p-12">
+         
             <div className=" py-5 ms-1 backround-color">
                 <h2 className="best-featuretitle ps-16">Our Best Features</h2>
                 <p className='py-2 px-14 feature-des'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa dolore quaerat velit quos laboriosam ullam dolores dignissimos suscipit quis et, adipisci laudantium veniam assumenda explicabo.</p>

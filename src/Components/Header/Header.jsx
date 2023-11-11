@@ -29,7 +29,7 @@ const Header = () => {
         
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl"><FaChartPie className="icon-color"></FaChartPie> Book Colleges</a>
+    <a className="btn btn-ghost normal-case text-xl flex"> <img className='icons-edit' src="https://i.ibb.co/5TbNqCx/svg-icons.png" alt="" /><span>Book Colleges</span></a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

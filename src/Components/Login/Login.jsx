@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Login.css'
 import { AuthContext } from '../Providers/AuthProvider/AuthProvider';
 import { GoogleAuthProvider } from 'firebase/auth';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -83,6 +84,11 @@ const Login = () => {
 
     return (
         <div >
+             <Helmet>
+                <meta charSet="utf-8" />
+                <title>Login-Book college</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <div className="hero min-h-screen bg-base-200">
                 <div className="my-9 ">
                     <div className="text-center ">

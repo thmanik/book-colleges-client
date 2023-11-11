@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import './SingleCardDetails.css'
 import { FaCheckCircle } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 const SingleCardDetails = () => {
     const singleCollege = useLoaderData()
@@ -8,6 +9,11 @@ const SingleCardDetails = () => {
     const { college_image, event, college_name, sports_facilities, admission_process,admission_date, events_details, research_work, sports_categories } = singleCollege;
     return (
         <div className="my-10  mx-10 singleCard-section">
+             <Helmet>
+                <meta charSet="utf-8" />
+                <title>{college_name} Details-Book college</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <div className="card lg:card-side bg-base-100 shadow-xl">
                 <figure><img className="imagee-size" src={college_image} alt="Movie" /></figure>
                 <div className="card-body">

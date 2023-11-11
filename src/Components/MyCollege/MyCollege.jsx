@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Providers/AuthProvider/AuthProvider";
+import { Helmet } from "react-helmet";
 
 
 const MyCollege = () => {
@@ -16,6 +17,11 @@ const [usersData, setUserData]=useState([])
   },[user])
     return (
         <div>
+           <Helmet>
+                <meta charSet="utf-8" />
+                <title>MyCollege-Book college</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
            <div className="overflow-x-auto">
   <table className="table">
     {/* head */}

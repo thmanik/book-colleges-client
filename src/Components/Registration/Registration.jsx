@@ -4,6 +4,7 @@ import  { useContext, useState } from 'react';
 import './Registration.css'
 import { AuthContext } from '../Providers/AuthProvider/AuthProvider';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -49,6 +50,11 @@ const Registration = () => {
     return (
         
             <div className="hero min-h-screen bg-base-200">
+               <Helmet>
+                <meta charSet="utf-8" />
+                <title>Registation-Book college</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
   <div className="">
     <div className="text-center ">
       <h1 className="text-2xl mt-1 font-bold">Registration Now!</h1>

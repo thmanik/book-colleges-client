@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import './Admission.css'
+import { Helmet } from "react-helmet";
 
 const Admission = () => {
     const [collegesInfo, setCollegesInfo] = useState([])
@@ -16,6 +17,11 @@ const Admission = () => {
     }, [])
     return (
         <div>
+             <Helmet>
+                <meta charSet="utf-8" />
+                <title>Admission-Book college</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <div className="text-center">
                 <h3 className="font-extrabold text-color text-4xl py-2">College list</h3>
                 <p className="text-center color">Choice your college...</p>

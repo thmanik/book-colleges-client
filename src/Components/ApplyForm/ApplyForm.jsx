@@ -2,6 +2,8 @@ import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider/AuthProvider";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
+import './applyForm.css'
+import { Helmet } from "react-helmet";
 
 
 
@@ -55,9 +57,15 @@ const ApplyForm = () => {
 
 
     return (
+      
         
             <div className="hero min-h-screen bg-base-200 py-6">
   <div className="">
+  <Helmet>
+                <meta charSet="utf-8" />
+                <title>ApplyForm-{data?.college_name}-Book college</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
     
     <div className="card apply-card max-w-sm shadow-2xl bg-base-100">
     <div className="text-center ">
