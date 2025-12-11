@@ -30,7 +30,7 @@ const router = createBrowserRouter([
       {
         path:"allColleges/:id",
         element:<PrivateRoute><SingleCardDetails></SingleCardDetails></PrivateRoute>,
-        loader:({params})=>fetch(`https://book-colleges-server-git-main-manikonlines-projects.vercel.app/allColleges/${params.id}`)
+        loader:({params})=>fetch(`https://book-colleges-server.vercel.app/allColleges/${params.id}`)
       },
       {
         path:"colleges",
@@ -51,7 +51,7 @@ const router = createBrowserRouter([
       {
         path:"applyForm/:id",
         element:<ApplyForm></ApplyForm>,
-        loader:({params})=>fetch(`https://book-colleges-server-git-main-manikonlines-projects.vercel.app/applyForm/${params.id}`)
+        loader:({params})=>fetch(`https://book-colleges-server.vercel.app/applyForm/${params.id}`)
       },
       {
         path:"mycollege",

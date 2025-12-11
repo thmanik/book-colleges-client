@@ -8,7 +8,7 @@ const CollegeRoute = () => {
     const [colleges, setColleges]=useState([])
 
     useEffect(()=>{
-        fetch('https://book-colleges-server-git-main-manikonlines-projects.vercel.app/allColleges')
+        fetch('https://book-colleges-server.vercel.app/allColleges')
         .then(res=>res.json())
         .then(data=>{
             console.log(data)

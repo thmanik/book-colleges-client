@@ -7,7 +7,7 @@ const MyCollege = () => {
 const {user}=useContext(AuthContext)
 const [usersData, setUserData]=useState([])
   useEffect(()=>{
-    fetch(`https://book-colleges-server-git-main-manikonlines-projects.vercel.app/mycollege?email=${user?.email}`)
+    fetch(`https://book-colleges-server.vercel.app/mycollege?email=${user?.email}`)
     .then(res=>res.json())
     .then(data=>{
         console.log(data)
