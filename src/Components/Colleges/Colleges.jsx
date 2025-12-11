@@ -52,7 +52,7 @@ const Colleges = () => {
             {/* college card */}
             <div className=" card-section grid md:grid-cols-3 sm:grid-cols-1   mt-12  md:ms-0 lg:ms-12 md:p-10 ">
                 {
-                    colleges.slice(0-6).map(college=><div key={college?._id}><div className="card card-edit card-width card-compact w-80  bg-base-100 shadow-xl mt-8">
+                    colleges.slice(0-3).map(college=><div key={college?._id}><div className="card card-edit card-width card-compact w-80  bg-base-100 shadow-xl mt-8">
                     <figure><img className="college-img" src={college?.college_image} alt="Shoes" /></figure>
                     <div className="card-body collegeCard-body">
                       <h2 className="card-title">{college?.college_name}</h2>

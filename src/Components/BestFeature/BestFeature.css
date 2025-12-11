@@ -40,6 +40,7 @@
 @media only screen and (max-width: 600px) {
  .best-featuretitle{
     font-size: 30px;
+    margin-left: 65px;
  }
  .backround-color{
     margin: 0px;
@@ -66,3 +67,13 @@
  }
    
    }
+   
+@media only screen and (min-width: 400px) {
+    .best-featuretitle{
+        font-size: 35px;
+        margin-left: 72px;
+        
+     }
+      
+      }
+   

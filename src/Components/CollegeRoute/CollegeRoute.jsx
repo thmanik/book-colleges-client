@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import './CollegeRoute.css'
 import { Link } from "react-router-dom";
-import { FaSearch } from "react-icons/fa";
 import { Helmet } from "react-helmet";
 
 
@@ -17,14 +16,14 @@ const CollegeRoute = () => {
         })
     },[])
     return (
-        <div>
+        <div className="collegeRoute-section">
              <Helmet>
                 <meta charSet="utf-8" />
                 <title>Colleges-Book college</title>
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
-            <div className="text-center font-extrabold text-4xl my-5 text-color underline">College Information</div>
-            <div className="grid card-sizee md:grid-cols-4 sm:grid-cols-1 m-5 ">
+            <div className="text-center collegeRoute-title font-extrabold text-4xl my-5 text-color underline">Colleges Information</div>
+            <div className="grid card-sizee md:grid-cols-4 sm:grid-cols-1  ">
             {
                 colleges.map(college=><div  className="w-72 " key={college._id}><div className="card college-card w-80 m-5 bg-base-100 shadow-xl image-full ">
                 <figure><img  src={college.college_image} alt="Shoes" width={330} height={230} /></figure>

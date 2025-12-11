@@ -8,15 +8,21 @@
    
   
 }
-.college-card {
+/* .college-card {
    margin: 5px;
-}
+} */
 
 @media only screen and (max-width: 600px) {
  .card-sizee{
-    margin: 0;
+   margin: 0 auto;
+ 
  }
  .college-card{
    margin-left: 35px;
+
  }
+ .collegeRoute-title{
+   font-size: 18px;
+ }
+ 
    }

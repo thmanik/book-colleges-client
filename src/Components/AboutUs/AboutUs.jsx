@@ -13,7 +13,7 @@ const AboutUs = () => {
             <p className="descript-2 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita blanditiis placeat itaque non magnam sequi excepturi </p>
 
             <div className="flex spacial-point">
-              <div className="py-6 px-3 "><h2 className="point-descript"><span className="p-3 me-2  badgee">01</span ><span className="des-point">Reputed College</span></h2><p className="ps-2 pe-1 description ">Lorem ipsum dolor sit amet consectetur adipisicing elit?</p></div>
+              <div className="py-6 px-3 "><h2 className="point-descript"><span className="p-3 me-2  badgee ">01</span ><span className="des-point">Reputed College</span></h2><p className="ps-2 pe-1 description ">Lorem ipsum dolor sit amet consectetur adipisicing elit?</p></div>
               <div></div>
               <div className="py-6 px-3 "><h2 className="point-descript"><span className="p-3 me-2  badgee">02</span><span className="des-point">Reputed College</span></h2><p className="ps-2 pe-1 description ">Lorem ipsum dolor sit amet consectetur adipisicing elit?</p></div>
              
