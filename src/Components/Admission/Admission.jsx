@@ -8,7 +8,7 @@ const Admission = () => {
 
 
     useEffect(() => {
-        fetch('https://book-college-server-1neisge2c-manikonline.vercel.app/allColleges')
+        fetch('https://book-colleges-server-git-main-manikonlines-projects.vercel.app/allColleges')
             .then(res => res.json())
             .then(data => {
                 console.log(data)

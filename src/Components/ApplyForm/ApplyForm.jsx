@@ -29,7 +29,7 @@ const ApplyForm = () => {
 
 
       console.log(collegeName, name)
-      fetch('https://book-college-server-1neisge2c-manikonline.vercel.app/userInfo',{
+      fetch('https://book-colleges-server-git-main-manikonlines-projects.vercel.app/userInfo',{
         method:"POST",
         headers:{
             'content-type':'application/json'
