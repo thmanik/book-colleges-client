@@ -1,105 +1,122 @@
-
-import  { useContext, useState } from 'react';
-
-
+import { useContext, useState } from 'react';
 import { AuthContext } from '../Providers/AuthProvider/AuthProvider';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-
-
 const Registration = () => {
- const location=useLocation()
- const navigate=useNavigate()
- const from=location?.state?.from?.pathname ||'/'
-  const{createUser,updateUserData}=useContext(AuthContext)
-  const [error, setError]=useState('');
-  
+    const location = useLocation();
+    const navigate = useNavigate();
+    const from = location?.state?.from?.pathname || '/';
+    const { createUser, updateUserData } = useContext(AuthContext);
+    const [error, setError] = useState('');
 
-  const handleRegister = event => {
-      event.preventDefault();
-      const form = event.target;
-      const name = form.name.value;
-      const photo = form.photo.value;
-      const email = form.email.value;
-      const password = form.password.value;
+    const handleRegister = event => {
+        event.preventDefault();
+        const form = event.target;
+        const name = form.name.value;
+        const photo = form.photo.value;
+        const email = form.email.value;
+        const password = form.password.value;
 
-      console.log(name, photo, email, password)
-      setError('');
-      form.reset();
+        setError('');
 
-      createUser(email, password)
-      .then(result=>{
-          const loggedUser=result.user
-          console.log(loggedUser)
-          updateUserData(result.user, name, photo)
-          navigate(from,{replace:true})
-
-      })
-      .catch(error=>{
-          console.log(error)
-          setError(error.message)
-      })
-
-
-     
-  }
-    
-
+        createUser(email, password)
+            .then(result => {
+                updateUserData(result.user, name, photo);
+                form.reset();
+                navigate(from, { replace: true });
+            })
+            .catch(error => {
+                setError(error.message);
+            });
+    };
 
     return (
-        
-            <div className="hero min-h-screen bg-base-200">
-               <Helmet>
+        <div className=" flex items-center justify-center bg-base-200 p-4">
+            <Helmet>
                 <meta charSet="utf-8" />
-                <title>Registation-Book college</title>
+                <title>Registration - Book College</title>
                 <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
-  <div className="">
-    <div className="text-center ">
-      <h1 className="text-2xl mt-1 font-bold">Registration Now!</h1>
-    </div>
-    <div className="card w-full max-w-sm shadow-2xl bg-base-100">
-      <form onSubmit={handleRegister}  className="card-body">
-      <div className="form-control">
-          <label className="label">
-            <span className="label-text text-white">Name</span>
-          </label>
-          <input type="text" name="name" placeholder="name" className="text-black input input-bordered" required />
+
+            
+            <div className=" my-5 md:my-10 w-full max-w-sm bg-base-100 rounded-xl shadow-md overflow-hidden">
+                <div className="p-8">
+                    <div className="text-center mb-6">
+                        <h1 className="text-2xl font-bold text-gray-800">Registration Now!</h1>
+                    </div>
+
+                    <form onSubmit={handleRegister} className="space-y-4">
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text font-semibold text-gray-700">Name</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                name="name" 
+                                placeholder="Enter your name" 
+                                className="input input-bordered w-full text-black focus:outline-none focus:border-blue-400" 
+                                required 
+                            />
+                        </div>
+
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text font-semibold text-gray-700">Email</span>
+                            </label>
+                            <input 
+                                type="email" 
+                                name="email" 
+                                placeholder="Enter your email" 
+                                className="input input-bordered w-full text-black focus:outline-none focus:border-blue-400" 
+                                required 
+                            />
+                        </div>
+
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text font-semibold text-gray-700">Password</span>
+                            </label>
+                            <input 
+                                type="password" 
+                                name="password" 
+                                placeholder="Enter password" 
+                                className="input input-bordered w-full text-black focus:outline-none focus:border-blue-400" 
+                                required 
+                            />
+                        </div>
+
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text font-semibold text-gray-700">Photo URL</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                name="photo" 
+                                placeholder="Photo URL link" 
+                                className="input input-bordered w-full text-black focus:outline-none focus:border-blue-400" 
+                                required 
+                            />
+                        </div>
+
+                        {error && (
+                            <p className="text-red-600 text-sm mt-2">{error}</p>
+                        )}
+
+                        <div className="form-control mt-6">
+                            <button className="btn btn-color w-full font-bold">Registration</button>
+                        </div>
+
+                        <div className="text-center mt-4">
+                            <p className="text-sm text-gray-600">
+                                Already have an account? 
+                                <Link className="color font-bold ml-1 hover:underline" to="/login">Login</Link>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text text-white">Email</span>
-          </label>
-          <input type="email" name="email" placeholder="email" className="text-black input input-bordered"required />
-        </div>
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text text-white">Password</span>
-          </label>
-          <input type="password" name="password" placeholder="password" className="text-black input input-bordered"required />
-        
-        </div>
-        <div className="form-control">
-          <label className="label">
-            <span className="label-text text-white">Photo URL</span>
-          </label>
-          <input type="text"name="photo" placeholder="Photo URL" className=" text-black input input-bordered" required/>
-        </div>
-        <div className='text-red-600'>
-          {error}
-        </div>
-        <div className="form-control mt-6">
-          <button className="btn btn-color ">Registration</button>
-        </div>
-              <label className="label">
-                <p>Already have an account?<Link className='new-user-btn color ' to='/login'>Login</Link></p>
-              </label>
-      </form>
-    </div>
-  </div>
-</div>
-       
     );
 };
 
