@@ -4,7 +4,6 @@ import BestFeature from "../BestFeature/BestFeature";
 import Colleges from "../Colleges/Colleges";
 import Galley from "../Gallery/Galley";
 import Testimonials from "../Testimonials/Testimonials";
-import { FaChartPie } from "react-icons/fa";
 
 
 const Home = () => {

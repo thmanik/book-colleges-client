@@ -9,7 +9,7 @@ import { Helmet } from "react-helmet";
 
 const ApplyForm = () => {
    const data=useLoaderData()
-   console.log('heloooooooooo', data)
+  
     const {user}=useContext(AuthContext)
   
 
@@ -28,7 +28,7 @@ const ApplyForm = () => {
       }
 
 
-      console.log(collegeName, name)
+      
       fetch('https://book-colleges-server.vercel.app/userInfo',{
         method:"POST",
         headers:{
@@ -38,7 +38,7 @@ const ApplyForm = () => {
       })
       .then(res=>res.json())
       .then(data=>{
-        console.log(data)
+       
         if(data.insertedId){
             Swal.fire({
                 position: 'top-end',
