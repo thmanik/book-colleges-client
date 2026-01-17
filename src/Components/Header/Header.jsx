@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import './Header.css'
-import { FaChartPie } from "react-icons/fa";
+
 import { useContext } from 'react';
-import { AuthContext } from '../Providers/AuthProvider/AuthProvider';
+import { AuthContext } from '../AuthProvider/AuthProvider';
+
 const Header = () => {
   const{ user, logOut}=useContext(AuthContext)
 

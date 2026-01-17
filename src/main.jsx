@@ -5,18 +5,21 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
+
 import Main from './Layout/Main.jsx';
-import Home from './Components/Home/Home.jsx';
-import SingleCardDetails from './Components/SingleCardDetails/SingleCardDetails.jsx';
-import CollegeRoute from './Components/CollegeRoute/CollegeRoute.jsx';
-import Login from './Components/Login/Login.jsx';
-import Registration from './Components/Registration/Registration.jsx';
-import AuthProvider from './Components/Providers/AuthProvider/AuthProvider.jsx';
-import PrivateRoute from './Components/Routes/PrivateRoute/PrivateRoute.jsx';
-import Admission from './Components/Admission/Admission.jsx';
-import ApplyForm from './Components/ApplyForm/ApplyForm.jsx';
-import MyCollege from './Components/MyCollege/MyCollege.jsx';
-import ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
+import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
+import CollegeRoute from './pages/CollegeRoute/CollegeRoute.jsx';
+import Login from './pages/Login/Login.jsx';
+import Admission from './pages/Admission/Admission.jsx';
+import ApplyForm from './pages/ApplyForm/ApplyForm.jsx';
+import MyCollege from './pages/MyCollege/MyCollege.jsx';
+import Home from './pages/Home/Home.jsx';
+import SingleCardDetails from './pages/SingleCardDetails/SingleCardDetails.jsx';
+import Registration from './pages/Registration/Registration.jsx';
+import AuthProvider from './components/AuthProvider/AuthProvider.jsx';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute.jsx';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -25,7 +28,7 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/",
-        element:<Home></Home>
+        element:<Home/>
       },
       {
         path:"allColleges/:id",
