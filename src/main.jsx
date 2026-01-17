@@ -17,8 +17,9 @@ import MyCollege from './pages/MyCollege/MyCollege.jsx';
 import Home from './pages/Home/Home.jsx';
 import SingleCardDetails from './pages/SingleCardDetails/SingleCardDetails.jsx';
 import Registration from './pages/Registration/Registration.jsx';
-import AuthProvider from './components/AuthProvider/AuthProvider.jsx';
+
 import PrivateRoute from './components/PrivateRoute/PrivateRoute.jsx';
+import AuthProvider from './components/AuthProvider/AuthProvider.jsx';
 
 const router = createBrowserRouter([
   {
