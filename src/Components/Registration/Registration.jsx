@@ -1,7 +1,7 @@
 
 import  { useContext, useState } from 'react';
 
-import './Registration.css'
+
 import { AuthContext } from '../Providers/AuthProvider/AuthProvider';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
