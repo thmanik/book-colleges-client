@@ -8,7 +8,7 @@ import Testimonials from "../Testimonials/Testimonials";
 
 const Home = () => {
     return (
-        <div>
+        <div >
             <Helmet>
                 <meta charSet="utf-8" />
                 <title>Home-Book college</title>

@@ -1,60 +1,86 @@
 import { Link } from "react-router-dom";
-import {FaChartPie, FaEnvelope, FaFacebook, FaInstagramSquare, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaTwitter} from "react-icons/fa";
-import './Footer.css'
+import { FaEnvelope, FaFacebook, FaInstagramSquare, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
     return (
-  <div className="">
-  <footer className="footer p-10  text-white">
+        <div className="bg-[#003344] text-white">
+        
+            <footer className="max-w-7xl mx-auto px-6 py-16">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    
+               
+                    <div className="space-y-6">
+                        <h2 className="text-2xl font-bold border-b-2 border-[#FF7350] inline-block pb-1">About Us</h2>
+                        <p className="text-gray-300 leading-relaxed text-sm md:text-base">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ullam quas, provident, minima debitis quos dolorum eligendi iure totam eos, odit cum similique est tenetur.
+                        </p>
+                        <div className="flex gap-5">
+                            <a href="#" className="hover:text-[#FF7350] transition-colors duration-300"><FaFacebook size={24} /></a>
+                            <a href="#" className="hover:text-[#FF7350] transition-colors duration-300"><FaInstagramSquare size={24} /></a>
+                            <a href="#" className="hover:text-[#FF7350] transition-colors duration-300"><FaTwitter size={24} /></a>
+                            <a href="#" className="hover:text-[#FF7350] transition-colors duration-300"><FaLinkedin size={24} /></a>
+                        </div>
+                    </div>
 
+                    
+                    <div className="md:text-center space-y-6">
+                        <h2 className="text-2xl font-bold border-b-2 border-[#FF7350] inline-block pb-1">Our Links</h2>
+                        <div className="flex flex-col space-y-3 pt-2">
+                            <Link to="/" className="hover:text-[#FF7350] transition-all duration-300 hover:translate-x-1 md:hover:translate-x-0">Home</Link>
+                            <Link to="/about" className="hover:text-[#FF7350] transition-all duration-300 hover:translate-x-1 md:hover:translate-x-0">About</Link>
+                            <Link to="/blog" className="hover:text-[#FF7350] transition-all duration-300 hover:translate-x-1 md:hover:translate-x-0">Blog</Link>
+                            <Link to="/contact" className="hover:text-[#FF7350] transition-all duration-300 hover:translate-x-1 md:hover:translate-x-0">Contact</Link>
+                        </div>
+                    </div>
 
-   <div className="grid md:grid-cols-3 sm:grid-cols-1">
-   <div>
-    <h2 className="color md:text-center  about-link ">About Us</h2> 
-     <p className="aboutLink-Title my-5 p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ullam quas, provident, minima debitis quos dolorum eligendi iure totam eos, odit cum similique est tenetur.</p>
-    <div className="flex gap-16 justify-center">
-       <a href=""><FaFacebook className="text-2xl"></FaFacebook></a>
-       <a href=""><FaInstagramSquare className="text-2xl"></FaInstagramSquare></a>
-       <a href=""><FaTwitter className="text-2xl"></FaTwitter></a>
-       <a href=""><FaLinkedin className="text-2xl"></FaLinkedin></a>
-      </div> 
-  </div>
+                  
+                    <div className="space-y-6">
+                        <h2 className="text-2xl font-bold border-b-2 border-[#FF7350] inline-block pb-1">Contact Us</h2>
+                        <div className="space-y-5 pt-2">
+                            <div className="flex items-start gap-4 group">
+                                <FaPhoneAlt className="text-[#FF7350] mt-1 group-hover:scale-110 transition-transform" />
+                                <div className="text-sm text-gray-300">
+                                    <p>+880 1234567890</p>
+                                    <p>+880 1234567890</p>
+                                </div>
+                            </div>
+                            <div className="flex items-start gap-4 group">
+                                <FaEnvelope className="text-[#FF7350] mt-1 group-hover:scale-110 transition-transform" />
+                                <div className="text-sm text-gray-300">
+                                    <p>info@example.com</p>
+                                    <p>about@example.com</p>
+                                </div>
+                            </div>
+                            <div className="flex items-start gap-4 group">
+                                <FaMapMarkerAlt className="text-[#FF7350] mt-1 group-hover:scale-110 transition-transform" />
+                                <div className="text-sm text-gray-300 leading-relaxed">
+                                    <p>1241/Plot No. 39, 15th Phase,</p>
+                                    <p>Dhaka, Bangladesh</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
 
-    <div className="text-center our-linkSection mx-auto" >
-    <h2 className="color text-center about-link ">Our Links</h2> 
-    <div className=" justify-center single-AboutLink mt-6">
-       <a className="about-singleLink" href="">Home</a><br /><br />
-       <a className="about-singleLink" href="">About</a><br /><br />
-       <a className="about-singleLink" href="">Blog</a><br /><br />
-       <a className="about-singleLink" href="">Contact</a><br />
-      </div>   
-    </div>
-    
-    <div  className="md:text-center contact-section mx-auto">
-     <h2 className="color md:text-center about-link ">Contact Us</h2> 
-    <div className=" md:justify-center contact-list   mt-6 md:ms-20">
-      <div className="flex">
-        <div><FaPhoneAlt className="text-2xl  phone-icon"></FaPhoneAlt></div>
-        <div className="contact-text ms-3" ><span>+880 1234567890</span><br /> <span>+880 1234567890</span></div>
-      </div>
-      <div className="flex mt-3">
-        <div><FaEnvelope className="text-2xl  phone-icon"></FaEnvelope></div>
-        <div className="contact-text ms-3" ><span>info@example.com</span><br /> <span>about@example.com</span></div>
-      </div>
-      <div className="flex mt-3">
-        <div><FaMapMarkerAlt className="text-2xl  phone-icon"></FaMapMarkerAlt></div>
-        <div className="contact-text ms-3" ><span>1241/Plot No. 39, 15th Phase,</span><br /><span>Dhaka, Bangladesh</span></div>
-      </div>
-      </div>  
-    </div>
-   </div>
-</footer> 
-<footer className="footer px-10 py-4 border-t  text-white border-base-300">
-  <div className="items-center grid-flow-col">
-    <p ><Link to='/'> <a className=" normal-case text-xl flex"> <img className='icons-edit' src="https://i.ibb.co/5TbNqCx/svg-icons.png" alt="" /><span className="mt-1 ms-1">Book Colleges</span></a> </Link><br/><p className="flex"><span className="mt-1"><FaMapMarkerAlt></FaMapMarkerAlt></span><span className="ms-1"> Dhaka, Bangladesh</span></p> <p className="text-muted mt-5 flex"> Copyright &copy;<a className="text-decoration-none text-info " ><b> <Link ><a className=" normal-case  flex"> <img className='icons-edits mt-1 ms-1' src="https://i.ibb.co/5TbNqCx/svg-icons.png" alt="" /><span className=" ms-1">Book Colleges</span></a> </Link></b></a>.<span className="ms-1">All Rights Reserved </span> </p> </p>
-  </div> 
- 
-</footer>
+            
+            <div className="border-t border-white/10 bg-[#002b3a]">
+                <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+                    <Link to='/' className="flex items-center gap-2 group">
+                        <img className='w-8 h-8 group-hover:rotate-12 transition-transform' src="https://i.ibb.co/5TbNqCx/svg-icons.png" alt="logo" />
+                        <span className="text-xl font-black tracking-tight">Book <span className="text-[#FF7350]">Colleges</span></span>
+                    </Link>
+
+                    <p className="text-sm text-gray-400 text-center">
+                        Copyright &copy; {new Date().getFullYear()} <b>Book Colleges</b>. All Rights Reserved.
+                    </p>
+
+                    <div className="flex items-center gap-2 text-sm text-gray-400">
+                        <FaMapMarkerAlt className="text-[#FF7350]" />
+                        <span>Dhaka, Bangladesh</span>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

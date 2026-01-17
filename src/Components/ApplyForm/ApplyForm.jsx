@@ -3,7 +3,7 @@ import { AuthContext } from "../Providers/AuthProvider/AuthProvider";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet";
-import './applyForm.css';
+
 
 const ApplyForm = () => {
     const data = useLoaderData();
