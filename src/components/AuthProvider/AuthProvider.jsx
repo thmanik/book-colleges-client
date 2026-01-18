@@ -50,12 +50,14 @@ const AuthProvider = ({children}) => {
     }
     const googleProvider = new GoogleAuthProvider();
     const googleLogin=()=>{
-        signInWithPopup(auth, googleProvider)
+      setLoading(true); 
+    return signInWithPopup(auth, googleProvider);
       
     }
     const githubProvider = new GithubAuthProvider();
     const githubLogin=()=>{
-        signInWithPopup(auth, githubProvider)
+        setLoading(true);
+    return signInWithPopup(auth, githubProvider);
     }
 
 

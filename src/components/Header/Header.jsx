@@ -1,53 +1,73 @@
-import { Link } from 'react-router-dom';
-import './Header.css'
-
-import { useContext } from 'react';
+import { useState, useContext } from 'react';
+import { NavLink, Link } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider/AuthProvider';
+import Sidebar from '../Sidebar/Sidebar';
 
 const Header = () => {
-  const{ user, logOut}=useContext(AuthContext)
+  const { user, logOut } = useContext(AuthContext);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handleLogOut=()=>{
-    logOut()
-  }
-    return (
-        <div>
-          <div className="navbar ">
-  <div className="navbar-start">
-    <div className="dropdown">
-      <label tabIndex={0} className="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-      </label>
-      <ul tabIndex={0} className="menu text-black menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/colleges'>Colleges</Link></li>
-        <li><Link to='/admission' >Admission</Link ></li>
-        <li><Link to='/mycollege'>My College</Link ></li>
-        {
-          user ? <><img title={user?.displayName} className="rounded-full ms-3 user-img" src={user?.photoURL} alt="" /> <Link onClick={handleLogOut} className="ms-2 text-black">LogOut</Link></>:<><li><Link to='/login'>Login</Link ></li>
-          <li><Link to='/registration'>Registration</Link ></li></>
-        }
+  const handleLogOut = () => {
+    logOut();
+  };
+
+  
+  const navLinkStyles = ({ isActive }) =>
+    isActive
+      ? "text-cyan-300 border-b-2 border-cyan-300 pb-1 transition-all duration-300"
+      : "hover:text-cyan-300 transition-all duration-300";
+
+  return (
+    <header className="bg-[#014C63] text-white sticky top-0 z-50 shadow-md">
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         
-      </ul>
-    </div>
-    <a className="btn btn-ghost normal-case text-xl flex"> <img className='icons-edit' src="https://i.ibb.co/5TbNqCx/svg-icons.png" alt="" /><span>Book Colleges</span></a>
-  </div>
-  <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-      <li><Link to='/'>Home</Link></li>
-      <li><Link to='/colleges'>Colleges</Link></li>
-      <li><Link to='/admission'>Admission</Link></li>
-      <li><Link to='/mycollege'>My College</Link></li>
-      {
-          user ? <><img title={user?.displayName} className="rounded-full ms-3 mt-1 user-img" src={user?.photoURL} alt="" /> <Link onClick={handleLogOut} className="ms-2 text-white mt-2">LogOut</Link></>:<><li><Link to='/login'>Login</Link ></li>
-          <li><Link to='/registration'>Registration</Link ></li></>
-        }
-    </ul>
-  </div>
- 
-</div>
-        </div>
-    );
+   
+        <Link to="/" className="flex items-center gap-2 text-xl font-bold">
+          <img className="w-9 h-9" src="https://i.ibb.co/5TbNqCx/svg-icons.png" alt="Logo" />
+          <span>Book Colleges</span>
+        </Link>
+
+      
+        <nav className="hidden lg:flex items-center space-x-6 font-medium">
+          <NavLink to="/" className={navLinkStyles}>Home</NavLink>
+          <NavLink to="/colleges" className={navLinkStyles}>Colleges</NavLink>
+          <NavLink to="/admission" className={navLinkStyles}>Admission</NavLink>
+          <NavLink to="/mycollege" className={navLinkStyles}>My College</NavLink>
+          
+          {user ? (
+            <div className="flex items-center gap-3 ml-4">
+              <img 
+                title={user?.displayName} 
+                className="w-9 h-9 rounded-full border-2 border-white object-cover" 
+                src={user?.photoURL} 
+                alt="User" 
+              />
+              <button onClick={handleLogOut} className="bg-red-500 hover:bg-red-600 px-4 py-1 rounded transition text-sm">
+                LogOut
+              </button>
+            </div>
+          ) : (
+            <div className="flex items-center gap-4 ml-4">
+              <NavLink to="/login" className={navLinkStyles}>Login</NavLink>
+              <Link to="/registration" className="bg-cyan-600 hover:bg-cyan-700 px-4 py-2 rounded text-sm transition">Register</Link>
+            </div>
+          )}
+        </nav>
+
+       
+        <button 
+          onClick={() => setIsOpen(true)} 
+          className="lg:hidden p-2 hover:bg-[#026685] rounded-md transition"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+
+      <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} user={user} handleLogOut={handleLogOut} />
+    </header>
+  );
 };
 
 export default Header;

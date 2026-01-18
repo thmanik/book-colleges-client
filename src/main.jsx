@@ -20,6 +20,9 @@ import Registration from './pages/Registration/Registration.jsx';
 
 import PrivateRoute from './components/routes/PrivateRoute.jsx';
 import AuthProvider from './components/AuthProvider/AuthProvider';
+import About from './pages/About/About.jsx';
+import BlogPage from './pages/Blogs/Blogs.jsx';
+import ContactPage from './pages/Contact/Contact.jsx';
 
 const router = createBrowserRouter([
   {
@@ -60,6 +63,18 @@ const router = createBrowserRouter([
       {
         path:"mycollege",
         element:<PrivateRoute><MyCollege></MyCollege></PrivateRoute>
+      },
+      {
+        path:"/about",
+        element:<About/>
+      },
+      {
+        path:"/blogs",
+        element:<BlogPage/>
+      },
+      {
+        path:"/contact",
+        element:<ContactPage/>
       }
     ]
   },

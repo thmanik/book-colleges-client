@@ -25,11 +25,11 @@ const Colleges = () => {
     return (
         <div className="bg-[#F4F7FA] min-h-screen md:pb-20">
             
-            <div className="relative bg-[#004d66] pt-16 pb-48 md:pt-32 md:pb-64 px-4 overflow-hidden">
+            <div className="relative bg-primary pt-16 pb-48 md:pt-32 md:pb-64 px-4 overflow-hidden">
                 
                 
                 <div className="absolute top-0 right-0 w-72 h-72 bg-white/5 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-                <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#FF7350]/10 rounded-full -ml-20 -mb-20 blur-3xl"></div>
+                <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/10 rounded-full -ml-20 -mb-20 blur-3xl"></div>
                 
                 
                 <div className="absolute inset-0 z-0 opacity-[0.03] pointer-events-none" 
@@ -41,19 +41,19 @@ const Colleges = () => {
                 <div className="max-w-5xl mx-auto flex flex-col items-center relative z-10">
                 
                     <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 px-4 py-1.5 rounded-full mb-6">
-                        <FaUniversity className="text-[#FF7350] text-xs" />
+                        <FaUniversity className="text-secondary text-xs" />
                         <span className="text-white text-[10px] font-bold uppercase tracking-[2px]">Find Your Academic Home</span>
                     </div>
 
                     <h1 className="text-3xl md:text-6xl font-black text-white mb-10 tracking-tight text-center leading-tight">
                         Explore Top Tier <br /> 
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF7350] to-[#ff9b80]">Colleges Worldwide</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-[#ff9b80]">Colleges Worldwide</span>
                     </h1>
                     
                     
                     <div className="w-full max-w-2xl bg-white/5 backdrop-blur-xl py-8 md:p-1  rounded-3xl md:rounded-full border border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.3)] flex flex-col md:flex-row items-center gap-2 transition-all duration-300 hover:bg-white/10">
                         <div className="flex-grow flex items-center w-full px-5">
-                            <FaSearch className="text-[#FF7350] mr-3" />
+                            <FaSearch className="text-secondary mr-3" />
                             <input
                                 onChange={(e) => setSearchText(e.target.value)}
                                 type="text"
@@ -63,7 +63,7 @@ const Colleges = () => {
                         </div>
                         <button 
                             onClick={handleSearch} 
-                            className="w-[90%] md:w-auto bg-[#FF7350] hover:bg-white hover:text-[#004d66] text-white px-5 md:px-10 py-2 md:py-3.5 rounded-2xl md:rounded-full transition-all duration-500 font-black text-sm uppercase tracking-wider shadow-xl active:scale-95"
+                            className="w-[90%] md:w-auto bg-secondary hover:bg-white hover:text-primary text-white px-5 md:px-10 py-2 md:py-3.5 rounded-2xl md:rounded-full transition-all duration-500 font-black text-sm uppercase tracking-wider shadow-xl active:scale-95"
                         >
                             Search
                         </button>

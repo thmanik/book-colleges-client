@@ -1,9 +1,10 @@
 import { Helmet } from "react-helmet";
-import AboutUs from "../AboutUs/AboutUs";
+
 import BestFeature from "../BestFeature/BestFeature";
 import Colleges from "../Colleges/Colleges";
 import Galley from "../Gallery/Galley";
 import Testimonials from "../Testimonials/Testimonials";
+import AboutUs from "../../components/AboutUs/AboutUs";
 
 
 const Home = () => {

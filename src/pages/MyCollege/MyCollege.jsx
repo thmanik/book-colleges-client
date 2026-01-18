@@ -25,11 +25,11 @@ const MyCollege = () => {
 
            
             <div className="max-w-6xl mx-auto mb-10 text-center md:text-left">
-                <h2 className="text-3xl md:text-4xl font-black text-[#004d66]">
-                    My <span className="text-[#FF7350]">Applications</span>
+                <h2 className="text-3xl md:text-4xl font-black text-primary">
+                    My <span className="text-secondary">Applications</span>
                 </h2>
                 <p className="text-gray-500 mt-2 italic font-medium">Tracking your academic journey and submissions.</p>
-                <div className="w-20 h-1.5 bg-[#FF7350] rounded-full mt-3 mx-auto md:mx-0"></div>
+                <div className="w-20 h-1.5 bg-secondary rounded-full mt-3 mx-auto md:mx-0"></div>
             </div>
 
             
@@ -39,12 +39,12 @@ const MyCollege = () => {
                         <div key={userData?._id} className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 flex flex-col md:flex-row">
                             
                             
-                            <div className="bg-[#004d66] md:w-1/4 p-8 flex flex-col items-center justify-center text-white text-center">
+                            <div className="bg-primary md:w-1/4 p-8 flex flex-col items-center justify-center text-white text-center">
                                 <div className="relative mb-4">
-                                    <div className="w-24 h-24 rounded-2xl overflow-hidden ring-4 ring-[#FF7350]/30 shadow-2xl">
+                                    <div className="w-24 h-24 rounded-2xl overflow-hidden ring-4 ring-secondary/30 shadow-2xl">
                                         <img className="w-full h-full object-cover" src={userData?.photo} alt="Student" />
                                     </div>
-                                    <div className="absolute -bottom-2 -right-2 bg-[#FF7350] p-2 rounded-lg shadow-lg">
+                                    <div className="absolute -bottom-2 -right-2 bg-secondary p-2 rounded-lg shadow-lg">
                                         <FaGraduationCap size={18} />
                                     </div>
                                 </div>
@@ -61,7 +61,7 @@ const MyCollege = () => {
                              
                                 <div className="space-y-4">
                                     <div className="flex items-start gap-4">
-                                        <div className="p-3 bg-gray-50 rounded-xl text-[#004d66]">
+                                        <div className="p-3 bg-gray-50 rounded-xl text-primary">
                                             <FaEnvelope />
                                         </div>
                                         <div>
@@ -70,7 +70,7 @@ const MyCollege = () => {
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-4">
-                                        <div className="p-3 bg-gray-50 rounded-xl text-[#004d66]">
+                                        <div className="p-3 bg-gray-50 rounded-xl text-primary">
                                             <FaPhoneAlt />
                                         </div>
                                         <div>
@@ -83,12 +83,12 @@ const MyCollege = () => {
                                
                                 <div className="space-y-4">
                                     <div className="flex items-start gap-4">
-                                        <div className="p-3 bg-orange-50 rounded-xl text-[#FF7350]">
+                                        <div className="p-3 bg-orange-50 rounded-xl text-secondary">
                                             <FaGraduationCap />
                                         </div>
                                         <div>
                                             <p className="text-[10px] font-black uppercase text-gray-400 tracking-widest">Institution</p>
-                                            <p className="text-xl font-black text-[#004d66]">{userData?.collegeName}</p>
+                                            <p className="text-xl font-black text-primary">{userData?.collegeName}</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-4">
@@ -108,7 +108,7 @@ const MyCollege = () => {
                                         <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></span>
                                         <span className="text-xs font-black text-gray-400 uppercase tracking-widest">Application Submitted</span>
                                     </div>
-                                    <button className="flex items-center gap-2 bg-[#FF7350] hover:bg-[#004d66] text-white px-6 py-2.5 rounded-xl font-bold transition-all duration-300 shadow-lg shadow-[#FF7350]/20 active:scale-95 group">
+                                    <button className="flex items-center gap-2 bg-secondary hover:bg-primary text-white px-6 py-2.5 rounded-xl font-bold transition-all duration-300 shadow-lg shadow-secondary/20 active:scale-95 group">
                                         <FaStar className="group-hover:rotate-45 transition-transform" /> Add Review
                                     </button>
                                 </div>

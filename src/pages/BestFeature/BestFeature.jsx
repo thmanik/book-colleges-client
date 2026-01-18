@@ -3,7 +3,7 @@ const BestFeature = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center p-4 sm:p-10 md:p-12 lg:p-16 bg-white overflow-hidden">
             
            
-            <div className="bg-[#014C63] text-white p-6 sm:p-10 md:p-12 rounded-2xl shadow-xl h-full flex flex-col justify-center">
+            <div className="bg-primary text-white p-6 sm:p-10 md:p-12 rounded-2xl shadow-xl h-full flex flex-col justify-center">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-center md:text-left mb-4">
                     Our Best Features
                 </h2>

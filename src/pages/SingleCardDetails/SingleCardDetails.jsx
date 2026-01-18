@@ -28,15 +28,15 @@ const SingleCardDetails = () => {
                 
                
                 <div className="mb-14 border-b-2 border-gray-100 pb-12">
-                    <div className="flex items-center gap-2 text-[#FF7350] font-bold uppercase tracking-[4px] text-md mb-4">
-                        <span className="w-8 h-[2px] bg-[#FF7350]"></span> institution profile
+                    <div className="flex items-center gap-2 text-secondary font-bold uppercase tracking-[4px] text-md mb-4">
+                        <span className="w-8 h-[2px] bg-secondary"></span> institution profile
                     </div>
                     <h1 className="text-3xl md:text-6xl font-black text-gray-900 tracking-tight mb-8">
                         {college_name}
                     </h1>
                     <div className="flex flex-wrap items-center gap-4">
                         <div className="flex items-center gap-3 bg-white px-6 py-3 rounded-2xl border-2 border-gray-100 shadow-sm">
-                            <FaCalendarAlt className="text-[#004d66]" />
+                            <FaCalendarAlt className="text-primary" />
                             <span className="text-sm font-bold text-gray-700">Deadline: {admission_date}</span>
                         </div>
                         <div className="hidden md:block h-6 w-[2px] bg-gray-200 mx-2"></div>
@@ -59,7 +59,7 @@ const SingleCardDetails = () => {
                         </div>
 
                         
-                        <div className="relative pl-4 md:pl-8 border-l-4 border-[#004d66]">
+                        <div className="relative pl-4 md:pl-8 border-l-4 border-primary">
                             <h2 className="text-xl md:text-3xl font-black text-gray-900 mb-2 md:mb-6 uppercase tracking-tight">Admission Process</h2>
                             <p className="text-gray-600 md:leading-relaxed text-md md:text-xl font-medium">
                                 {admission_process}
@@ -98,7 +98,7 @@ const SingleCardDetails = () => {
                                         <p className="text-[10px] font-black text-gray-400 uppercase tracking-[3px] mb-5">Athletics Categories</p>
                                         <div className="flex flex-wrap gap-2">
                                             {sports_categories?.map((category, i) => (
-                                                <span key={i} className="bg-gray-50 text-gray-800 border border-gray-200 px-5 py-2 rounded-xl text-xs font-bold hover:bg-[#004d66] hover:text-white transition-colors cursor-default">
+                                                <span key={i} className="bg-gray-50 text-gray-800 border border-gray-200 px-5 py-2 rounded-xl text-xs font-bold hover:bg-primary hover:text-white transition-colors cursor-default">
                                                     {category}
                                                 </span>
                                             ))}
@@ -122,7 +122,7 @@ const SingleCardDetails = () => {
                                 <div className="mt-12">
                                     <Link 
                                         to={`/applyForm/${_id}`}
-                                        className="group flex items-center justify-center gap-4 bg-[#004d66] text-white w-full px-2 md:px-5 py-3 md:py-5 rounded-3xl font-black text-sm md:text-lg hover:bg-[#FF7350] transition-all duration-500 shadow-2xl active:scale-95 overflow-hidden relative"
+                                        className="group flex items-center justify-center gap-4 bg-primary text-white w-full px-2 md:px-5 py-3 md:py-5 rounded-3xl font-black text-sm md:text-lg hover:bg-secondary transition-all duration-500 shadow-2xl active:scale-95 overflow-hidden relative"
                                     >
                                         <span className="relative z-10 uppercase tracking-widest">Apply For Admission</span>
                                         <FaArrowRight className="group-hover:translate-x-2 transition-transform relative z-10" />
