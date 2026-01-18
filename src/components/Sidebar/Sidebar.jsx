@@ -37,7 +37,7 @@ const Sidebar = ({ isOpen, setIsOpen, user, handleLogOut }) => {
             <Link onClick={() => setIsOpen(false)} to="/colleges" className="px-4 py-2 hover:bg-gray-100 rounded">Colleges</Link>
             <Link onClick={() => setIsOpen(false)} to="/admission" className="px-4 py-2 hover:bg-gray-100 rounded">Admission</Link>
             <Link onClick={() => setIsOpen(false)} to="/mycollege" className="px-4 py-2 hover:bg-gray-100 rounded">My College</Link>
-            
+            <Link onClick={() => setIsOpen(false)} to="/blogs" className="px-4 py-2 hover:bg-gray-100 rounded">Blogs</Link>
             <div className="mt-4 border-t pt-4">
               {user ? (
                 <button 

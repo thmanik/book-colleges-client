@@ -33,6 +33,7 @@ const Header = () => {
           <NavLink to="/colleges" className={navLinkStyles}>Colleges</NavLink>
           <NavLink to="/admission" className={navLinkStyles}>Admission</NavLink>
           <NavLink to="/mycollege" className={navLinkStyles}>My College</NavLink>
+           <NavLink to="/blogs" className={navLinkStyles}>Blogs</NavLink>
           
           {user ? (
             <div className="flex items-center gap-3 ml-4">
